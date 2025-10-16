@@ -1,3 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+    background-image: url('./asset/photo.jpg');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slideshow {
+  /* background-size: cover; */
+  background-position: center;
+  animation: slide 40s infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url('./asset/photo.jpg');
+    color: black;
+  }
+  50% {
+    background-image: url('./asset/photo2.jpeg');
+    color: white;
+  }
+  100% {
+    color: black;
+    background-image: url('./asset/photo.jpg');
+  }
+}
+
+
+
 .container {
   background: transparent;
   padding: 30px 40px;
@@ -6,6 +44,7 @@
   text-align: center;
   width: 350px;
 }
+
 .search_box {
   color: white;
 }
