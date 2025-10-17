@@ -1,15 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: white; */
 }
 
 .body {
   background-image: url("./asset/photo.jpg");
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;

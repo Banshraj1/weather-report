@@ -5,6 +5,7 @@
 
 .body {
   background-image: url("./asset/photo.jpg");
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -12,39 +13,13 @@
   align-items: center;
   color: black;
 }
-/* 
-@media (min-width: 1000px) {
-  .slideshow {
-    background-size: cover;
-    background-position: center;
-    animation: slide 80s infinite;
-  }
-
-  @keyframes slide {
-    0% {
-      background-image: url("./asset/photo.jpg");
-      color: white;
-    }
-    33% {
-      background-image: url("./asset/photo2.jpeg");
-      color: black;
-    }
-    66% {
-      background-image: url("./asset/photo3.jpeg");
-      color: black;
-    }
-    100% {
-      color: white;
-      background-image: url("./asset/photo.jpg");
-    }
-  }
-} */
 
 .container {
   background: transparent;
   padding: 30px 40px;
+  /* padding: auto; */
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 350px;
 }
@@ -53,10 +28,11 @@
   color: white;
 }
 #cityName {
-  min-height: 25px;
+  text-align: center;
+  min-height: 30px;
   border: none;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 6px 0 0 6px;
+  border-radius: 5px;
   opacity: 0.5;
   outline: none;
 }
@@ -70,11 +46,13 @@
   opacity: 0.66;
 }
 #getWeatherBtn {
+  text-align: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
   border: none;
-  min-height: 25px;
-  border-radius: 0 6px 6px 0;
+  min-height: 30px;
+  border-radius: 5px;
   opacity: 0.6;
+  margin-left: 4px;
 }
 #getWeatherBtn:hover {
   opacity: 0.7;
@@ -97,8 +75,9 @@
   margin-top: 5px;
   font-size: 20px;
 }
-@media (max-width: 1350px) {
-  .weather-info {
+@media (max-width: 1700px) {
+  .container {
     color: white;
+    box-shadow: 0 5px 20px rgba(170, 168, 165, 0.5);
   }
 }
